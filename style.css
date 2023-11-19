@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+ }
+  
+ body {
+     font-family: Arial, Verdana, sans-serif;
+     background: #fff;
+     color: #000;
+     font-size: 15px;
+     line-height: 1.5em;
+}
+ 
+a {
+     text-decoration: none;
+     color: #262626;
+}
+ 
+ul {
+     list-style: none;
+}
+ 
+ .container {
+     width: 90%;
+     max-width: 1100px;
+     margin: auto;
+}
+ 
+ 
+ 
+ /*  Nav */
+ 
+.main-nav {
+     display: flex;
+     align-items: center;
+     height: 60px;
+     padding: 20px 0;
+     font-size: 13px;
+     justify-content: space-between;
+}
+ 
+.main-nav .logo{
+    width: 110px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul.main-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.main-nav ul li{
+    padding: 0 10px;
+}
+
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #000;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    background-color: #262626;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    width: 130px;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/*showcase */
+
+.Showcase{
+    margin-top: 10px;
+    width: 100%;
+    height: 400px;
+    background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4ntGe?ver=8414&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=199&s=2120&d=795&aim=true)
+    no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.Showcase h1{
+    margin-top: 80px;
+}
+
+.Showcase p {
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+/* Home cards */
+
+.home-cards{
+    display: grid; 
+    width: 100%;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.home-cards img {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.home-cards h3, p{
+    margin-bottom: 5px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.home-cards p{
+    margin-left: 10px;
+}
+
+.home-cards a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Xbox */
+
+.xbox{
+    background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3hFDE?ver=e113&q=0&m=8&h=472&w=1259&b=%23FFFFFFFF&l=f&x=0&y=187&s=2120&d=795&aim=true)
+    no-repeat center center/cover;
+
+    width: 100%;
+    height: 340px;
+    margin-top: 20px;
+}
+
+.xbox .content{
+    width: 40%;
+    color: #000000;
+    padding: 50px 0 0 30px;
+}
+
+.xbox p, h2{
+    padding: 10px 0 20px;
+}
+
+body h3{
+    margin-top: 30px;
+}
+
+
+/*  Follow */
+
+.Follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 30px;
+}
+
+.follow p, img{
+    font-size: 10px;
+    margin-left: 20px; 
+}
+
+
+/* Links */
+
+.links {
+    background: #f2f2f2;
+    color: #626262;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.inner-links {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.links li{
+    line-height: 2.8em;
+}
+
+
+/* Footer */
+
+.footer {
+
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0; 
+}
+
+.inner-footer{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer div i{
+    margin-right: 10px;
+}
+
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer li{
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+@media(max-width: 700px){
+    .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Showcase p{
+        width: 40%;
+    }
+
+    .inner-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer div {
+        display: inline-block;
+    }
+
+    .xbox {
+    background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3hFDE?ver=e113&q=0&m=8&h=303&w=539&b=%23FFFFFFFF&l=f&x=504&y=148&s=1616&d=908&aim=true)
+    no-repeat center center/cover;
+    width: auto;
+    height: 310px;
+    background-size: 100%;
+    }
+
+.xbox .content p {
+    display: none;
+}
+
+.Showcase {
+    background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4ntGe?ver=8414&q=0&m=8&h=303&w=539&b=%23FFFFFFFF&l=f&x=1091&y=364&s=822&d=462&aim=true)
+    no-repeat center center/cover;
+    width: auto;
+    height: 310px;
+    margin-bottom: 80px;
+}
+
+.Showcase p {
+    display: none;
+}
+
+.menu-btn {
+    display: block;
+}
+
+.main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-500px);
+    opacity: 0.9;
+}
+
+.main-nav ul.right-menu {
+        margin-right: 50px;
+}
+
+.main-nav ul.main-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+
+}
+
+.main-nav ul.main-menu li:last-child {
+    border-bottom: 0;
+}
+
+.main-nav ul.main-menu.show {
+    transform: translateX(-20px);
+}
+}
+
+
+@media(max-width: 500px) {
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .Showcase p{
+        width: 40%;
+    }
+
+    .inner-links {
+        grid-template-columns: 1fr;
+    }
+
+    .footer div {
+        display: inline-block;
+    }
+
+    .xbox{
+        background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3hFDE?ver=e113&q=0&m=8&h=303&w=539&b=%23FFFFFFFF&l=f&x=504&y=148&s=1616&d=908&aim=true)
+        no-repeat center center/cover;
+        background-size: 100%;
+        width: auto;
+        height: 310px;
+    }
+
+    .Showcase {
+        background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4ntGe?ver=8414&q=0&m=8&h=303&w=539&b=%23FFFFFFFF&l=f&x=1091&y=364&s=822&d=462&aim=true)
+        no-repeat center center/cover;
+    background-size: 100%;
+        width: auto;
+        height: 310px;
+        margin-bottom: 80px;
+
+    }
+
+    .Showcase p {
+        display: none;
+    }
+
+
+
+    .home-cards {
+        
+    }
+}
